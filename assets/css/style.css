@@ -952,8 +952,23 @@ html, body {
   padding-bottom: 0;
 }
 
+.site-section.section-counters .container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.site-section.section-counters .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos */
+  align-items: center; /* Alinea verticalmente */
+  text-align: center; /* Asegura que los textos estén centrados */
+  gap: 60px; /* Agrega separación entre los elementos */
+}
+
 .site-section.section-counters .rectangle {
   margin: 15px auto 10px;
+  text-align: center;
 }
 
 .site-section.section-counters .rectangle i,
@@ -972,8 +987,10 @@ html, body {
 .site-section.section-counters .row p {
   margin: 30px 0 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
+/* Ajustes para centrar columnas y separar en pantallas pequeñas */
 @media only screen and (max-width: 767px) {
   /* Section: Counters */
   .section-counters .col-sm-2:nth-child(n+3) {
@@ -993,6 +1010,7 @@ html, body {
     margin-top: 20px;
   }
 }
+
 
 /* Section: Services */
 .section-services.site-section {
